@@ -7,6 +7,9 @@ import org.joda.time.DateTime;
 import java.lang.reflect.Type;
 import java.util.Date;
 
+/**
+ * Ceci est un exemple de Gson avec des codec spécialisés pour certains types de données.
+ */
 public class CustomGson {
 
 	public static Gson getIt(){

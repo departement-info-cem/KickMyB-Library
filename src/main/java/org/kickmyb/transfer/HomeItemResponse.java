@@ -6,13 +6,13 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by joris on 15-09-15.
+ * Résumé d'une tâche. Prévu pour l'affichage dans une liste d'accueil
  */
 public class HomeItemResponse {
 
     public Long id;
     public String name;
-    public List<String> tags = new ArrayList<>();
     public int percentageDone;
-    public Date dueDate;
+    public int percentageTimeSpent;
+    public Date deadline;
 }
