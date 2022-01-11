@@ -1,9 +1,6 @@
 package org.kickmyb.transfer;
 
-
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 /**
  * Résumé d'une tâche. Prévu pour l'affichage dans une liste d'accueil

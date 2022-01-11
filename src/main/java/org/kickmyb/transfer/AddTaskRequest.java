@@ -8,5 +8,5 @@ public class AddTaskRequest {
     // Le nom, non vide doit être unique
     public String name;
     // La date limite pour la tâche
-    public Date deadLine;
+    public Date deadline;
 }

@@ -8,7 +8,7 @@ public class TaskDetailResponse {
 
     // données
     public String name;
-    public Date deadLine;
+    public Date deadline;
 
     // Liste de tous les événements de progression pour affichage dans l'ordre chrono inverse
     public List<ProgressEvent> events;
