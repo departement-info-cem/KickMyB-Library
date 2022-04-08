@@ -15,5 +15,5 @@ public class TaskDetailResponse {
 
     // valeurs calculées sur le serveur à afficher au détail
     public int percentageDone;
-    public int percentageTimeSpent;
+    public double percentageTimeSpent;
 }

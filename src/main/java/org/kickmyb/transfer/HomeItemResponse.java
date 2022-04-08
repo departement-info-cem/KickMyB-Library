@@ -10,6 +10,6 @@ public class HomeItemResponse {
     public Long id;
     public String name;
     public int percentageDone;
-    public int percentageTimeSpent;
+    public double percentageTimeSpent;
     public Date deadline;
 }
