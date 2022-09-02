@@ -12,12 +12,13 @@ import java.util.Date;
  */
 public class CustomGson {
 
-	public static String dateFormat = "dd-MM-yyyy HH:mm:ss Z";
+	public static String dateFormat = "yyyy-MM-dd'T'HH:mm:ss";
 
 	public static Gson getIt(){
 		GsonBuilder builder = new GsonBuilder();
 		builder.enableComplexMapKeySerialization();
 		builder.setDateFormat(dateFormat);
+		// exemples de serialisation specialise mais pas utilise dans le projet
 		builder.registerTypeAdapter(DateTime.class, new DateTimeSerialiser());
 		builder.registerTypeAdapter(byte[].class, new ByteArraySerialiser());
 		builder.setPrettyPrinting();
