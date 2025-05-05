@@ -10,8 +10,8 @@ public class TestGsonPersonnalise {
     @Test
     public void testDate(){
         RequeteAjoutTache atr = new RequeteAjoutTache();
-        atr.deadline = new Date();
-        atr.name = "gna gna";
+        atr.dateLimite = new Date();
+        atr.nom = "gna gna";
         String s = GsonPersonnalise.gsonPerso().toJson(atr);
 
         RequeteAjoutTache recov = GsonPersonnalise.gsonPerso().fromJson(s, RequeteAjoutTache.class);
