@@ -5,11 +5,11 @@ import java.util.Date;
 /**
  * Résumé d'une tâche. Prévu pour l'affichage dans une liste d'accueil
  */
-public class HomeItemResponse {
+public class ReponseAccueilItem {
 
     public Long id;
-    public String name;
-    public int percentageDone;
-    public double percentageTimeSpent;
-    public Date deadline;
+    public String nom;
+    public int pourcentageAvancement;
+    public int pourcentageTemps;
+    public Date dateLimite;
 }

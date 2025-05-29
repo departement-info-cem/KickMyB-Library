@@ -3,17 +3,16 @@ package org.kickmyb.transfer;
 import java.util.Date;
 import java.util.List;
 
-public class TaskDetailResponse {
+public class ReponseDetailTache {
     public Long id;
-
-    // données
-    public String name;
-    public Date deadline;
+    
+    public String nom;
+    public Date dateLimite;
 
     // Liste de tous les événements de progression pour affichage dans l'ordre chrono inverse
-    public List<ProgressEvent> events;
+    public List<ChangementAvancement> changements;
 
     // valeurs calculées sur le serveur à afficher au détail
-    public int percentageDone;
-    public double percentageTimeSpent;
+    public int pourcentageAvancement;
+    public double pourcentageTemps;
 }

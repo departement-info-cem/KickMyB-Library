@@ -5,19 +5,18 @@ import com.google.gson.*;
 import org.joda.time.DateTime;
 
 import java.lang.reflect.Type;
-import java.util.Date;
 
 /**
  * Ceci est un exemple de Gson avec des codec spécialisés pour certains types de données.
  */
-public class CustomGson {
+public class GsonPersonnalise {
 
-	public static String dateFormat = "yyyy-MM-dd'T'HH:mm:ss";
+	public static String formatDate = "yyyy-MM-dd'T'HH:mm:ss";
 
-	public static Gson getIt(){
+	public static Gson gsonPerso(){
 		GsonBuilder builder = new GsonBuilder();
 		builder.enableComplexMapKeySerialization();
-		builder.setDateFormat(dateFormat);
+		builder.setDateFormat(formatDate);
 		// exemples de serialisation specialise mais pas utilise dans le projet
 		builder.registerTypeAdapter(DateTime.class, new DateTimeSerialiser());
 		builder.registerTypeAdapter(byte[].class, new ByteArraySerialiser());
@@ -44,6 +43,4 @@ public class CustomGson {
 			return BaseEncoding.base64().decode(json.getAsJsonPrimitive().getAsString());
 		}
 	}
-
-	
 }
